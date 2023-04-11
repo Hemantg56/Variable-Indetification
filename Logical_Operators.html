@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical-Operators</title>
+</head>
+
+<body>
+    <!-- LOGICAL-OPERATORS -->
+    <!-- 3 ya isse bhi jyada values ko ek saat call karana hai to logical operators rakhna padata hai -->
+    <!-- Isko trinity se call karana padata hai -->
+    <!-- Trinity Operators -->
+    <!-- (x > y logical-operators x > z) ? Ture : False; -->
+
+    <script>
+        x = 60;
+        y = 50;
+        z = 10;
+
+        // LOGICAL-OPERATORS && (AND)
+
+        // Condision ==> (T T == T)
+        hem = (x > y && x > z) ? 'True' : 'False';
+        document.write(hem)
+        document.write('<br>')
+
+        a = 60;
+        b = 50;
+        c = 10;
+
+        // jub condidion me ek true or ek false ho to false ke value me or condidion laga dena hai
+        // Condision ==> (F T == F)
+        hem = (a < b && a > c) ? 'True' : (b > c) ? b : c;
+        document.write(hem)
+        document.write('<br>')
+
+        // jub condidion me ek true or ek false ho to false ke value me or condidion laga dena hai
+        // Condision ==> (T F == F)
+        hem = (a > b && a < c) ? 'True' : (b < c) ? b : c;
+        document.write(hem)
+        document.write('<br>')
+
+        // Condision ==> (F F == F)
+        hem = (a < b && a < c) ? 'True' : 'False';
+        document.write(hem)
+        document.write('<br>')
+
+
+        // LOGICAL-OPERATORS || (OR)
+
+        a = 60;
+        b = 50;
+        c = 10;
+        // Condision ==> (T T == T)
+        hem = (a > b || a > c) ? 'True' : 'False';
+        document.write(hem)
+        document.write('<br>')
+
+        // Condision ==> (F T == T)
+        hem = (a < b || a > c) ? 'True' : 'False';
+        document.write(hem)
+        document.write('<br>')
+
+        // Condision ==> (T F == T)
+        hem = (a > b || a < c) ? 'True' : 'False';
+        document.write(hem)
+        document.write('<br>')
+
+        // Condision ==> (T F == T)
+        hem = (a < b || a < c) ? 'True' : 'False';
+        document.write(hem)
+        document.write('<br>')
+
+        // LOGICAL-OPERATORS ! (NOT)
+
+        a = 60;
+        b = 50;
+        c = 10;
+
+        // Condision ==> (!T == F)
+        hem = !(a > b || a > c) ? 'True' : 'False';
+        document.write(hem)
+        document.write('<br>')
+
+        // Condision ==> (!F == T)
+        hem = !(a < b || a < c) ? 'True' : 'False';
+        document.write(hem)
+        document.write('<br>')
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable-Identifier</title>
+</head>
+
+<body>
+    <!-- variable nu biju name  -->
+    <!-- Identifier pan 6 -->
+
+    <!-- variable/identifier nu kaam ==> to store of values. -->
+
+    <!-- Variable/identifier ne 3 rite declare kari skay -->
+
+    <!-- 1. VAR  (default / global)-->
+    <!-- 2. LET -->
+    <!-- 3. CONST -->
+
+    <!-- Keywords ==> Reservered Words Which Have Special meaning -->
+
+    <!-- SYSTAX ==>  apane ko kese get karna  hai or var ka name kese dete hai  -->
+
+    <!-- apne ko  get karana hai variable name riakhine get kariye to mane ene style aapvu hoy to doucument rakhvanu jaroor na hoy 
+    direct variable nu name end je attribute ne values change karvanu hoy to srot tum pati jaay  -->
+    <!-- apne ko kese varible ko lagana hai vo niche hai -->
+
+    <!-- 1. VAR ==> var varname = 'values'; -->
+    <!-- 2. LET ==> let letname = 'values'; -->
+    <!-- 3. CONST ==> const constname = 'values'; -->
+
+    <!-- example ==> -->
+
+    <!-- var varname = 'values' -->
+    <!-- var hemant  = 'devandra' -->
+
+
+    <!-- var na rules  -->
+    <!-- 1. varname ne number vade start nahi kari skay -->
+    <!-- 2. varname ne keywords vade var name nahi aapi skay -->
+
+    <!-- example -->
+
+    <!-- var 123 = 'hemant' it's (wrong) kyuki varname number se chalu ho raha hai isliye -->
+    <!-- var switch = 'devendra' it's (wrong) kyuki varname keywords bhi nahi rakh skate hai kyui keywords is special words. -->
+
+    <!-- var hem1 = 'hemant' it's (right) kyu ki varname ke last pe apne number lagaskate hai  -->
+    <!-- var switch1 = 'hemant' it's (right) kyu ki varname ke last pe apne number lagaskate hai  -->
+
+    <script>
+        // var - let - const declare type
+        // 1. VAR
+        // 1. declaration (allowed)
+        // 2. Re-declaration (allowed)
+        // 3. Re-assignment (allowed)
+
+
+        var par = 50; // declaration (allowed)
+        var par = 60; // Re-declaration (allowed)
+        var par = 90; // Re-assignment (allowed)
+        document.write(par)
+        document.write('<br>')
+
+        // 2. LET
+        // 1. declaration (allowed)
+        // 2. Re-declaration (not-allowed)
+        // 3. Re-assignment (allowed)
+
+        let dev = 20; // declaration (allowed)
+        // let dev = 40; // Re-declaration (not-allowed)
+        dev = 50; // Re-assignment (allowed) but aagad let nhi lakhavanu lakhsu to re-declaration thse
+        document.write(dev)
+        document.write('<br>')
+
+        // 3. CONST
+        // 1. declaration (allowed)
+        // 2. Re-declaration (not-allowed)
+        // 3. Re-assignment (not-allowed)
+
+
+        const hem = 20; // declaration (allowed)
+        // const hem = 40; // Re-declaration (not-allowed)
+        // hem = 50; // Re-assignment (not-allowed)
+        document.write(hem)
+    </script>
+
+
+</body>
+
+</html>
